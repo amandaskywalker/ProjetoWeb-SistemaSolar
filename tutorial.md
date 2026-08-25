@@ -1,9 +1,9 @@
 Projeto Odisseia Solar
 
-Grupo:
-Amanda Massari - 10374292
-Nícolas Takehara - 10771443
-Isabelle Franco - 10425395
+Grupo:<br></br>
+Amanda Massari - 10374292 <br></br>
+Nícolas Takehara - 10771443 <br></br>
+Isabelle Franco - 10425395 <br></br>
 Paulo Zorzin Gerin - 10771431
 
 Ideação: O projeto "Odisseia Solar" foi idealizado com o intento de auxiliar no processo educacional brasileiro de crianças entre 4 a 6 anos, tornando as aulas de ciência e astronomia mais dinâmicas e convidativas para alunos que, do contrário, não teriam acesso a tais materiais ou que necessitem de maior estímulo para aprender sobre o Sistema Solar.
