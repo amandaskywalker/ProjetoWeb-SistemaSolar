@@ -1,6 +1,6 @@
 <h1>Projeto Odisseia Solar</h1>
 
-<h2>Grupo:</h2><br></br>
+<h2>Grupo:</h2>
 Amanda Massari - 10374292 <br></br>
 Nícolas Takehara - 10771443 <br></br>
 Isabelle Franco - 10425395 <br></br>
