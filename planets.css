@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050711;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 50px 20px 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+.item h2 {
+  font-size: 1.8rem;
+}
+
+.item p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.planeta {
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.25s;
+  text-decoration: none;
+}
+
+.planeta:hover {
+  transform: scale(1.08);
+}
+
+.sol {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at 35% 35%, #fff, #ffb703, #d90429);
+  box-shadow: 0 0 45px #fb8500;
+}
+
+.mercurio {
+  width: 75px;
+  height: 75px;
+  background: radial-gradient(circle at 35% 35%, #dcd6ce, #7c7268, #222);
+}
+
+.venus {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 35% 35%, #ffe6a7, #d48b28, #43281c);
+}
+
+.terra {
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle at 35% 35%, #60a5fa, #1d4ed8, #0b1a4a);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.4);
+}
+
+.lua {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #eee, #888, #333);
+}
+
+.marte {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle at 35% 35%, #ff8a65, #c43c16, #370617);
+}
+
+.jupiter {
+  width: 160px;
+  height: 160px;
+  background: repeating-linear-gradient(180deg, #d4a373 0, #d4a373 12px, #99582a 12px, #99582a 24px);
+  box-shadow: inset -15px -10px 25px rgba(0, 0, 0, 0.7);
+}
+
+.saturno {
+  width: 135px;
+  height: 135px;
+  background: radial-gradient(circle at 35% 35%, #faedcd, #d4a373, #6f4e37);
+}
+
+.anel-saturno {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  height: 65px;
+  margin-top: -32px;
+  margin-left: -110px;
+  border-radius: 50%;
+  border: 10px solid rgba(220, 185, 130, 0.7);
+  transform: rotate(-18deg);
+  pointer-events: none;
+}
+
+.urano {
+  width: 115px;
+  height: 115px;
+  background: radial-gradient(circle at 35% 35%, #cbf3f0, #2ec4b6, #014f86);
+}
+
+.anel-urano {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55px;
+  height: 165px;
+  margin-top: -82px;
+  margin-left: -27px;
+  border-radius: 50%;
+  border: 4px solid rgba(155, 246, 255, 0.6);
+  pointer-events: none;
+}
+
+.netuno {
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle at 35% 35%, #70a9ff, #2563eb, #03045e);
+}
+
+.card-pagina {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.card-pagina ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 20px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.card-pagina a.voltar {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
