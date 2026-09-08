@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+#titulo {
+  color: #6ee7b7;
+  text-align: center;
+}
+
+#descricao {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#lista-fatos {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-fatos li {
+  background-color: #161b22;
+  border-left: 4px solid #6ee7b7;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+#voltar {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#voltar a {
+  color: #6ee7b7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#voltar a:hover {
+  text-decoration: underline;
+}
