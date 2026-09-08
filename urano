@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urano</title>
+  <link rel="stylesheet" href="planets.css">
+</head>
+<body>
+  <section class="card-pagina">
+    <section class="planeta urano">
+      <span class="anel-urano"></span>
+    </section>
+    <h1>Urano</h1>
+    <p>Urano é o sétimo planeta a partir do Sol, um gigante de gelo com rotação extremamente inclinada.</p>
+    <ul>
+      <li>Posição a partir do Sol: 7º</li>
+      <li>Gira de lado com uma inclinação axial de quase 98 graus</li>
+      <li>É o planeta com a atmosfera mais fria do Sistema Solar (-224 °C)</li>
+    </ul>
+    <a href="index.html" class="voltar">← Voltar ao início</a>
+  </section>
+</body>
+</html>
