@@ -77,12 +77,12 @@ Dentro do `<head>`, adicionamos uma tag `<link>` apontando para o arquivo de est
 - `rel="stylesheet"`: informa ao navegador que aquele arquivo é uma folha de estilos.
 - `href="..."`: caminho do arquivo `.css`. Como fica na mesma pasta do HTML, basta o nome do arquivo.
 
-### Usando `id`s para estilizar
+### Usando `class`s para estilizar
 
 Para que o CSS soubesse exatamente qual elemento estilizar, adicionamos um `id` em cada elemento do HTML:
 
 ```html
-<h1 id="titulo">Júpiter</h1>
+<h1 id="titulo">Odisséia Solar</h1>
 <p id="descricao">***Info do planeta***</p>
 <ul id="lista-fatos">
     <li id="fato-posicao">Posição a partir do Sol: ...</li>
@@ -94,23 +94,23 @@ Para que o CSS soubesse exatamente qual elemento estilizar, adicionamos um `id` 
 E no arquivo `.css` correspondente, usamos `#` para selecionar cada `id`:
 
 ```css
-#titulo {
+.titulo {
   color: #cf8f54;
   text-align: center;
 }
 
-#descricao {
+.descricao {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: center;
 }
 
-#lista-fatos {
+.lista-fatos {
   list-style: none;
   padding: 0;
 }
 
-#lista-fatos li {
+.lista-fatos li {
   background-color: #161b22;
   border-left: 4px solid #cf8f54;
   padding: 10px 15px;
@@ -118,14 +118,14 @@ E no arquivo `.css` correspondente, usamos `#` para selecionar cada `id`:
   border-radius: 4px;
 }
 
-#voltar a {
+.voltar a {
   color: #cf8f54;
   text-decoration: none;
   font-weight: bold;
 }
 ```
 
-- `#id`: seleciona o único elemento que tem aquele `id` (diferente de uma classe, que pode se repetir várias vezes na página).
+- `.class`: seleciona o único elemento que tem aquele `id` (diferente de uma classe, que pode se repetir várias vezes na página).
 - Cada planeta tem sua própria cor de destaque, usada no título, nos fatos e no link de voltar, para diferenciar visualmente cada página sem mudar a estrutura do HTML.
 
 ### Padrão entre as páginas
