@@ -80,3 +80,80 @@ if (btnTopo) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+function criarMiniQuiz() {
+  const card = document.querySelector('.card-pagina');
+  if (!card) return; 
+
+  const perguntasAstro = {
+    'Sol': 'O Sol é tão grande que caberia mais de 1 milhão de Terras dentro dele! ☀️',
+    'Mercúrio': 'Apesar de ser o mais perto do Sol, Mercúrio não é o planeta mais quente do Sistema Solar! 🌡️',
+    'Vênus': 'Vênus é o planeta mais quente de todos e gira no sentido oposto ao da Terra! 🌋',
+    'Terra': 'A Terra é o único lugar conhecido no universo inteiro que tem vida e milkshake! 🌍',
+    'Marte': 'Marte tem uma montanha três vezes mais alta que o Monte Everest! 🚀',
+    'Júpiter': 'Júpiter é tão grande que tem uma tempestade gigante maior que a própria Terra! 🌀',
+    'Saturno': 'Se existisse uma piscina gigante, Saturno boiaria na água de tão leve! 🪐',
+    'Urano': 'Urano gira "deitado" de lado, como se estivesse rolando no espaço! ❄️',
+    'Netuno': 'Em Netuno venta tão forte que os ventos vão mais rápido que um avião a jato! 💨'
+  };
+
+  const tituloPagina = card.querySelector('h1');
+  const nomeAstro = tituloPagina ? tituloPagina.innerText.trim() : '';
+  const segredoAstro = perguntasAstro[nomeAstro] || 'Você é um grande explorador do espaço! 🌟';
+
+  const quizArea = document.createElement('div');
+  quizArea.style.cssText = `
+    margin-top: 25px;
+    padding: 18px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    border: 2px dashed #38bdf8;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  `;
+
+  quizArea.innerHTML = `
+    <p style="margin-bottom: 10px; font-weight: bold; color: #38bdf8; font-size: 1.1rem;">
+      🚀 Desafio do Astronauta
+    </p>
+    <p style="margin-bottom: 14px; font-size: 0.95rem; color: #e2e8f0;">
+      Quer descobrir um segredo super divertido sobre este astro?
+    </p>
+    <button id="btn-revelar-quiz" style="
+      background: #38bdf8;
+      color: #050711;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    ">Revelar Segredo!</button>
+    <p id="resposta-quiz" style="
+      display: none; 
+      margin-top: 12px; 
+      color: #ffd166; 
+      font-weight: bold; 
+      font-size: 1rem;
+      line-height: 1.4;
+    "></p>
+  `;
+
+  card.appendChild(quizArea);
+
+  const btn = document.getElementById('btn-revelar-quiz');
+  const resposta = document.getElementById('resposta-quiz');
+
+  btn.addEventListener('mouseenter', () => btn.style.transform = 'scale(1.05)');
+  btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
+
+  btn.addEventListener('click', () => {
+    resposta.innerText = segredoAstro;
+    resposta.style.display = 'block';
+    btn.style.display = 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', criarMiniQuiz);
