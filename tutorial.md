@@ -22,112 +22,122 @@ O protótipo (imagem abaixo), é pensado para ser simples e responsivo, com uma 
 ```html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Odisséia Solar</title>
+<title>Sistema Solar</title>
 ```
 
-- `<meta charset="UTF-8">`: para garantir que acentos apareçam corretamente.
-- `<meta name="viewport">`: garante que a página se ajuste a todos os tamanhos de tela.
-- `<title>`: para aparecer o título do projeto na aba do navegador.
+- `<meta charset="UTF-8">`: garante que acentos e caracteres especiais apareçam corretamente no navegador.
+- `<meta name="viewport">`: garante a responsividade da página, ajustando o layout para telas de diferentes tamanhos (celulares, tablets e computadores).
+- `<title>`: define o título que aparece na aba do navegador.
 
-### Títulos: `<h1>` e `<h2>`
+### Página Principal (`index.html`)
 
-Usados para garantir a hierarquia dos nomes na página.
-
-### Lista de planetas: `<ul>` e `<li>`
-
-Foi usado `<ul>` e `<li>` para listar os planetas do site:
+A página principal utiliza marcas semânticas do HTML5 para estruturar a jornada do usuário pelos corpos celestes:
 
 ```html
-<ul>
-    <li><a href="mercurio.html">Mercurio</a></li>
-    <li><a href="venus.html">Venus</a></li>
-</ul>
+<header>
+  <h1>Sistema Solar</h1>
+  <p>Role a página para baixo para ver o Sol e os planetas em ordem.</p>
+</header>
+
+<main>
+  <section class="item">
+    <a href="jupiter.html" class="planeta jupiter"></a>
+    <h2>5. Júpiter</h2>
+    <p>778,5 milhões de km do Sol</p>
+  </section>
+  <!-- Outras seções de planetas... -->
+</main>
 ```
 
-- `<ul>`: lista não ordenada, usada aqui porque são opções de navegação, não uma sequência numerada.
-- `<li>`: cada item da lista (um planeta).
-- `<a href="...">`: cria o link. Como o endereço é só o nome do arquivo (`mercurio.html`), o navegador vai procurar esse arquivo na mesma pasta do `index.html`. A intenção é que os planetas sejam clicáveis e tenham suas próprias páginas com mais informações.
+- `<header>`: exibe o título principal do projeto e o texto instrucional de navegação.
+- `<main>`: agrupa todos os elementos astronômicos na página inicial.
+- `<section class="item">`: cria um bloco individual para cada corpo celeste, mantendo o visual centralizado.
+- `<a href="..." class="planeta ...">`: elemento interativo circular que serve como representação gráfica do astro e redireciona o usuário para sua respectiva página.
+- `<h2>` e `<p>`: mostram a posição numerada/nome do astro e sua distância aproximada do Sol.
 
-### Página de planetas (por ex: `jupiter.html`)
+### Páginas Individuais dos Planetas (ex: `jupiter.html`)
 
 ```html
-<h1>Júpiter</h1>
-<p>***Info do planeta***</p>
-<ul>
-    <li>Posição a partir do Sol: </li>
-    <li>***texto aqui, etc etc***</li>
-</ul>
-<p><a href="index.html">Voltar ao início</a></p>
+<section class="card-pagina">
+  <section class="planeta jupiter"></section>
+  <h1>Júpiter</h1>
+  <p>Júpiter é o quinto planeta a partir do Sol e o maior de todo o Sistema Solar.</p>
+  <ul>
+    <li>Posição a partir do Sol: 5º</li>
+    <li>É um gigante gasoso com mais de duas vezes a massa de todos os outros planetas juntos</li>
+    <li>Possui mais de 90 luas conhecidas, como Ganimedes e Europa</li>
+  </ul>
+  <a href="index.html" class="voltar">← Voltar ao início</a>
+</section>
 ```
 
-Cada página de planeta segue o mesmo padrão do `index.html`: `<h1>` com o nome do planeta, `<p>` com a descrição, `<ul>` com fatos rápidos, e um link de volta com `<a href="index.html">`. Isso permite copiar essa estrutura para `mercurio.html`, `venus.html`, etc., trocando só o texto e tornando tudo padronizado.
+Todas as páginas detalhadas dos astros seguem o mesmo padrão:
+- `<section class="card-pagina">`: caixa de apresentação que centraliza todo o conteúdo informativo da página.
+- `<section class="planeta ...">`: insere a ilustração gráfica estilizada do astro.
+- `<h1>`: destaca o nome do astro.
+- `<p>`: apresenta um resumo introdutório.
+- `<ul>` e `<li>`: organizam os fatos rápidos e curiosidades em forma de lista.
+- `<a href="index.html" class="voltar">`: link com classe `voltar` para navegação de retorno ao menu principal.
 
 ## Estilização com CSS
 
-Depois que o HTML de todas as páginas ficou pronto, adicionamos um arquivo `.css` para cada uma, deixando o site com cores e um visual mais organizado, sem perder a estrutura simples do HTML.
+A aparência de todo o projeto é centralizada em uma **única folha de estilos**, o arquivo `planets.css`.
 
 ### Vinculando o CSS
 
-Dentro do `<head>`, adicionamos uma tag `<link>` apontando para o arquivo de estilos daquela página:
+Dentro do `<head>` de todas as páginas HTML, é incluída a tag de vínculo:
 
 ```html
-<link rel="stylesheet" href="jupiter.css">
+<link rel="stylesheet" href="planets.css">
 ```
 
-- `rel="stylesheet"`: informa ao navegador que aquele arquivo é uma folha de estilos.
-- `href="..."`: caminho do arquivo `.css`. Como fica na mesma pasta do HTML, basta o nome do arquivo.
+- `rel="stylesheet"`: indica que o arquivo é uma folha de estilos.
+- `href="planets.css"`: aponta para o arquivo CSS central do projeto.
 
-### Usando `class`s para estilizar
+### Estilização com Classes (`class`)
 
-Para que o CSS soubesse exatamente qual elemento estilizar, adicionamos um `id` em cada elemento do HTML:
-
-```html
-<h1 id="titulo">Odisséia Solar</h1>
-<p id="descricao">***Info do planeta***</p>
-<ul id="lista-fatos">
-    <li id="fato-posicao">Posição a partir do Sol: ...</li>
-    <li id="fato-1">***texto aqui, etc etc***</li>
-</ul>
-<p id="voltar"><a href="index.html">Voltar ao início</a></p>
-```
-
-E no arquivo `.css` correspondente, usamos `#` para selecionar cada `id`:
+Em vez de seletores por ID, o projeto emprega **classes CSS** (selecionadas com `.`), permitindo reaproveitar estilos entre as páginas:
 
 ```css
-.titulo {
-  color: #cf8f54;
-  text-align: center;
+.card-pagina {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
 }
 
-.descricao {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  text-align: center;
+.planeta {
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.25s;
+  text-decoration: none;
 }
 
-.lista-fatos {
-  list-style: none;
-  padding: 0;
+.planeta:hover {
+  transform: scale(1.08);
 }
 
-.lista-fatos li {
-  background-color: #161b22;
-  border-left: 4px solid #cf8f54;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  border-radius: 4px;
+.jupiter {
+  width: 160px;
+  height: 160px;
+  background: repeating-linear-gradient(180deg, #d4a373 0, #d4a373 12px, #99582a 12px, #99582a 24px);
+  box-shadow: inset -15px -10px 25px rgba(0, 0, 0, 0.7);
 }
 
-.voltar a {
-  color: #cf8f54;
+.card-pagina a.voltar {
+  color: #38bdf8;
   text-decoration: none;
   font-weight: bold;
+  margin-top: 10px;
 }
 ```
 
-- `.class`: seleciona o único elemento que tem aquele `id` (diferente de uma classe, que pode se repetir várias vezes na página).
-- Cada planeta tem sua própria cor de destaque, usada no título, nos fatos e no link de voltar, para diferenciar visualmente cada página sem mudar a estrutura do HTML.
-
-### Padrão entre as páginas
-
-Assim como o HTML, o CSS segue o mesmo padrão em todas as páginas de planeta: os mesmos `id`s (`#titulo`, `#descricao`, `#lista-fatos`, `#voltar`), mudando apenas a cor de destaque para combinar com cada planeta. Já o `index.html` usa seu próprio conjunto de `id`s (`#titulo`, `#planetas-titulo`, `#planetas-intro`, `#lista-planetas` e um `#item-{planeta}` para cada link da lista), o que deixa a página inicial e as páginas de planeta visualmente conectadas, mas cada uma com sua identidade.
+- `.card-pagina` e `.item`: utilizam `display: flex` para alinhar verticalmente os elementos e centralizar o conteúdo.
+- `.planeta`: define a base circular (`border-radius: 50%`) e o efeito de ampliação (`transform: scale`) no passar do mouse (`:hover`).
+- Classes específicas (ex: `.sol`, `.mercurio`, `.jupiter`): estabelecem as proporções de tamanho e os padrões de gradiente de cor (`radial-gradient` ou `linear-gradient`) característicos de cada corpo celeste.
+- Elementos complementares (`.lua`, `.anel-saturno`, `.anel-urano`): usam posicionamento absoluto (`position: absolute`) para renderizar os anéis e luas orbitando os planetas correspondentes.
+- `.voltar`: personaliza a aparência do link de retorno para a página inicial.
