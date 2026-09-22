@@ -11,7 +11,7 @@ Site educativo e interativo sobre o Sistema Solar, pensado para tornar as aulas 
 
 ## Sobre o projeto
 
-A página principal apresenta uma jornada vertical pelo Sistema Solar, do Sol até Netuno, passando pelo Cinturão Principal de Asteroides. Cada corpo celeste é ilustrado inteiramente em CSS (sem imagens pesadas) e leva a uma página própria com curiosidades, estrutura interna, atmosfera e luas naturais. As páginas de cada planeta também trazem um mini quiz interativo para reforçar o aprendizado.
+A página principal apresenta uma jornada vertical pelo Sistema Solar, do Sol até Netuno, passando pelo Principal de Asteroides. Cada corpo celeste é ilustrado inteiramente em CSS  e leva a uma página própria com curiosidades, estrutura interna, atmosfera e luas naturais. As páginas de cada planeta também trazem um mini quiz interativo para reforçar o aprendizado.
 
 ## Estrutura do projeto
 
@@ -42,21 +42,17 @@ ProjetoWeb-SistemaSolar/
 
 O projeto é HTML/CSS/JS puro, servido com [Vite](https://vitejs.dev/) durante o desenvolvimento.
 
-```bash
-npm install
-```
-
 Depois é só abrir o endereço indicado no terminal (geralmente `http://localhost:5173`) no navegador.
 
 Alternativamente, o `index.html` pode ser aberto diretamente no navegador, já que não depende de build.
 
 ## Funcionalidades
 
-- 🌌 Campo de estrelas animado ao fundo, gerado em `<canvas>`.
-- 📊 Barra de progresso que acompanha a rolagem da jornada pelo Sistema Solar.
-- ⬆️ Botão flutuante para retornar suavemente ao topo.
-- 🪐 Ilustrações 3D em CSS puro, incluindo os anéis de Saturno e Urano com efeito de profundidade.
-- 🧠 Mini quiz por planeta para testar o conhecimento adquirido.
+- Campo de estrelas animado ao fundo, gerado em `<canvas>`.
+- Barra de progresso que acompanha a rolagem da jornada pelo Sistema Solar.
+- Botão flutuante para retornar suavemente ao topo.
+- Ilustrações 3D em CSS puro, incluindo os anéis de Saturno e Urano com efeito de profundidade.
+- Mini quiz por planeta para testar o conhecimento adquirido.
 
 ## Documentação adicional
 
