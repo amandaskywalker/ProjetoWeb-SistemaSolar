@@ -1,0 +1,63 @@
+.card-pagina {
+  max-width: 580px;
+  margin: 50px auto 70px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-pagina h1 {
+  font-size: 2rem;
+}
+
+.card-pagina h3 {
+  font-size: 1.1rem;
+  color: #38bdf8;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.card-pagina p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  width: 100%;
+}
+
+.card-pagina ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 20px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.card-pagina a.voltar {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 14px;
+  display: inline-block;
+  border: 1px solid #38bdf8;
+  border-radius: 20px;
+  padding: 8px 18px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.card-pagina a.voltar:hover {
+  background: #38bdf8;
+  color: #050711;
+}
+
+.card-pagina .planeta.saturno {
+  margin-bottom: 26px;
+}
+
+.card-pagina .planeta.urano {
+  margin-bottom: 24px;
+}
