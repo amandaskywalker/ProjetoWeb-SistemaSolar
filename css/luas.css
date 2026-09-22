@@ -1,0 +1,172 @@
+.lua {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, #ffffff 0%, #cbd5e1 35%, #64748b 70%, #1e293b 100%);
+  box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.75), 0 0 14px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+.lua-fobos {
+  position: absolute;
+  top: -14px;
+  left: -18px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #baa38b 0%, #786657 45%, #2e2620 85%, #15110e 100%);
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.85), 0 0 10px rgba(186, 163, 139, 0.35);
+  pointer-events: none;
+}
+
+.lua-deimos {
+  position: absolute;
+  bottom: -10px;
+  right: -16px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #cfc4b6 0%, #8c7e70 50%, #3a322b 90%, #15120f 100%);
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.85), 0 0 8px rgba(207, 196, 182, 0.3);
+  pointer-events: none;
+}
+
+.lua-io {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fffb8f 0%, #facc15 35%, #ea580c 70%, #7c2d12 100%);
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.8), 0 0 14px rgba(250, 204, 21, 0.65);
+  pointer-events: none;
+}
+
+.lua-europa {
+  position: absolute;
+  top: 50px;
+  right: -32px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #e0f2fe 35%, #7dd3fc 65%, #0284c7 95%, #082f49 100%);
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.75), 0 0 16px rgba(125, 211, 252, 0.75);
+  pointer-events: none;
+}
+
+.lua-ganimedes {
+  position: absolute;
+  bottom: -24px;
+  left: 45px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f1f5f9 0%, #94a3b8 35%, #475569 70%, #1e293b 95%, #0f172a 100%);
+  box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.85), 0 0 16px rgba(148, 163, 184, 0.5);
+  pointer-events: none;
+}
+
+.lua-calisto {
+  position: absolute;
+  bottom: 40px;
+  right: -38px;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #cbd5e1 0%, #64748b 35%, #334155 70%, #0f172a 100%);
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.85), 0 0 12px rgba(100, 116, 139, 0.45);
+  pointer-events: none;
+}
+
+.lua-tita {
+  position: absolute;
+  top: -42px;
+  right: 32px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffedd5 0%, #fb923c 40%, #c2410c 75%, #431407 100%);
+  box-shadow: inset -6px -6px 12px rgba(67, 20, 7, 0.85), 0 0 22px rgba(251, 146, 60, 0.7);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.lua-encelado {
+  position: absolute;
+  top: 130px;
+  right: -42px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #f0f9ff 40%, #bae6fd 75%, #0284c7 100%);
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.6), 0 0 18px rgba(255, 255, 255, 0.95);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.lua-mimas {
+  position: absolute;
+  top: 55px;
+  left: -48px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #e2e8f0 0%, #94a3b8 45%, #475569 85%, #0f172a 100%);
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.8), 0 0 10px rgba(148, 163, 184, 0.4);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.lua-miranda {
+  position: absolute;
+  top: -24px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f8fafc 0%, #cbd5e1 45%, #64748b 85%, #1e293b 100%);
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.8), 0 0 12px rgba(203, 213, 225, 0.45);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.lua-titania {
+  position: absolute;
+  top: 105px;
+  right: -36px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #e0f2fe 0%, #7dd3fc 40%, #0284c7 75%, #0c4a6e 100%);
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.75), 0 0 14px rgba(125, 211, 252, 0.55);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.lua-tritao {
+  position: absolute;
+  bottom: -32px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fae8ff 0%, #e0e7ff 35%, #818cf8 70%, #312e81 100%);
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.75), 0 0 18px rgba(199, 210, 254, 0.75);
+  pointer-events: none;
+}
+
+.lua-proteu {
+  position: absolute;
+  top: -22px;
+  left: 24px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #94a3b8 0%, #475569 50%, #0f172a 100%);
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.85), 0 0 10px rgba(148, 163, 184, 0.35);
+  pointer-events: none;
+}
