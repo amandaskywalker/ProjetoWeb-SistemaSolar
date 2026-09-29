@@ -11,7 +11,17 @@ Site educativo e interativo sobre o Sistema Solar, pensado para tornar as aulas 
 
 ## Sobre o projeto
 
-A página principal apresenta uma jornada vertical pelo Sistema Solar, do Sol até Netuno, passando pelo Principal de Asteroides. Cada corpo celeste é ilustrado inteiramente em CSS  e leva a uma página própria com curiosidades, estrutura interna, atmosfera e luas naturais. As páginas de cada planeta também trazem um mini quiz interativo para reforçar o aprendizado.
+Claro — substitua **apenas** a seção “Sobre o projeto” por esta versão:
+
+ Sobre o projeto✓
+
+## Sobre o projeto
+
+ A **Odisseia Solar** é um projeto educativo e extensionista desenvolvido com o objetivo de aproximar conhecimentos de ciências e astronomia do público infantil, utilizando recursos digitais interativos como ferramenta de apoio à aprendizagem. A proposta busca tornar o contato com o Sistema Solar mais acessível, lúdico e envolvente para crianças de 4 a 6 anos, contribuindo para a divulgação científica e para o desenvolvimento da curiosidade e do interesse pela ciência desde os primeiros anos.
+
+ A página principal apresenta uma jornada vertical pelo Sistema Solar, do Sol até Netuno, passando pelo Cinturão Principal de Asteroides. Cada corpo celeste é ilustrado inteiramente em CSS e leva a uma página própria com curiosidades, estrutura interna, atmosfera e luas naturais. As páginas de cada planeta também trazem um mini quiz interativo, permitindo que as crianças revisem e reforcem os conhecimentos apresentados de maneira divertida.
+
+ Como proposta extensionista, o projeto busca estabelecer uma ponte entre o conhecimento acadêmico e a comunidade, transformando conteúdos científicos em uma experiência digital adequada ao público infantil. Dessa forma, a plataforma pode ser utilizada como recurso complementar em atividades educativas, proporcionando uma abordagem mais dinâmica para o ensino de astronomia e incentivando a exploração, a descoberta e a aprendizagem por meio da interação.
 
 ## Estrutura do projeto
 
